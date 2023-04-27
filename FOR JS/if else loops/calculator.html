@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    Enter no.1: <input type="number" id="1no">
+    <br>
+    Enter no.2: <input type="number" id="2no">
+    <br>
+    <button onclick="fun(1)">Add</button>
+    <button onclick="fun(2)">Sub</button>
+    <button onclick="fun(3)">Mult</button>
+    <button onclick="fun(4)">Div</button>
+    <button onclick="fun(5)">Exp</button>
+
+    <p id="result"></p>
+
+
+    <script>
+        function fun(n)
+        {
+            a1=Number(document.getElementById("1no").value);
+            a2=Number(document.getElementById("2no").value);
+            if (n==1){
+                a=a1+a2;
+            }
+
+            else if (n==2){
+                a=a1-a2;
+            }
+
+            else if (n==3){
+                a=a1*a2;
+            }
+
+            else if (n==4){
+                a=a1/a2;
+            }
+
+            else if (n==5){
+                a=Math.pow(a1,a2);
+            }
+
+            document.getElementById("result").innerHTML = a;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod necessitatibus asperiores perferendis quos nobis a iure dolores ullam animi, commodi modi maxime tenetur, laborum qui ipsam mollitia dignissimos? Magnam! 
+        <span id="show" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit debitis, deserunt, hic ex dolor explicabo commodi itaque voluptate quae a blanditiis corrupti sed! Alias hic possimus quas aliquid quod iusto. </span>
+    </p>
+    <button class="btn btn-outline-dark" onclick="show()" ondblclick="hide()">to read more (dblclick to hide)</button>
+
+    <br><br><br> <hr><hr><hr>
+    <p id="color" style="color:brown;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum distinctio maiores, aliquid nemo quo laborum, iusto recusandae sequi magnam dolorem laboriosam sint sunt dignissimos officia quas deleniti quisquam exercitationem illo?
+    </p>
+    <button class="btn btn-outline-dark" onclick="color_cg()" ondblclick="color_og()">to color change (dblclick to revert)</button>
+
+    <br><br><br> <hr><hr><hr>
+    <img src="img/Naruto-meme-header.webp" alt="" id="img" style="height: 500px; width: 500px;">
+    <br>
+    <button class="btn btn-outline-dark" onclick="img_cg()" ondblclick="img_og()">to img change (dblclick to revert)</button>
+
+    <script>
+        function show()
+        {
+            document.getElementById("show").style.display="block";
+        }
+
+        function hide()
+        {
+            document.getElementById("show").style.display="none";
+        }
+
+        function color_cg()
+        {
+            document.getElementById("color").style.color="green";
+        }
+
+        function color_og()
+        {
+            document.getElementById("color").style.color="brown";
+        }
+
+        function img_cg()
+        {
+            document.getElementById("img").src="img/maxresdefault.jpg";
+        }
+
+        function img_og()
+        {
+            document.getElementById("img").src="img/Naruto-meme-header.webp";
+        }
+    </script>
+</body>
+</html>

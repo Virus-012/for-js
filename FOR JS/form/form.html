@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+        .show1{
+            display: none;
+        }
+        .show2{
+            display: none;
+        }
+        .show3{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">capsule coures</label>
+        <input type="radio" class="" id="click1" onclick="func1()" name="cc" value="click1">
+        <label for="">softwares</label>
+        <input type="radio" class="" id="click2" onclick="func2()" name="cc" value="click2">
+        <label for="">full courses</label>
+        <input type="radio" class="" id="click3" onclick="func3()" name="cc" value="click3">
+    </form>
+    <div class="show1" id="show1">
+        <select name="" id="">
+            <option value="">c1</option>
+            <option value="">c1</option>
+            <option value="">c1</option>
+            <option value="">c1</option>
+            <option value="">c1</option>
+            <option value="">c1</option>
+
+        </select>
+    </div>
+    <div class="show2" id="show2">
+        <select name="" id="">
+            <option value="">d1</option>
+            <option value="">d1</option>
+            <option value="">d1</option>
+            <option value="">d1</option>
+            <option value="">d1</option>
+            <option value="">d1</option>
+
+        </select>
+    </div>
+    <div class="show3" id="show3">
+        <select name="" id="">
+            <option value="">e1</option>
+            <option value="">e1</option>
+            <option value="">e1</option>
+            <option value="">e1</option>
+            <option value="">e1</option>
+            <option value="">e1</option>
+
+        </select>
+    </div>
+
+    <script>
+        function func1(){
+            document.getElementById("show1").style.display= "block" ;
+            document.getElementById("show3").style.display= "none";
+            document.getElementById("show2").style.display= "none" ;
+        }
+
+        function func2(){
+            document.getElementById("show2").style.display= "block" ;
+            document.getElementById("show3").style.display= "none";
+            document.getElementById("show1").style.display= "none" ;
+        }
+
+        function func3(){
+            document.getElementById("show3").style.display= "block";
+            document.getElementById("show2").style.display= "none" ;
+            document.getElementById("show1").style.display= "none" ;
+        }
+    </script>
+</body>
+</html>

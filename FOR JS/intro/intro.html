@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+</head>
+<body>
+<button onclick="document.getElementById('myimage').src='pic_bulbon.gif'">Turn on light</button>    
+<img src="pic_bulboff.gif" alt="off" id="myimage">
+<button oneclick="document.getElementById('myimage').src='pic_bulboff.gif'">Turn off light</button>
+<hr><hr><hr>
+<p id="change">Hi this is me, Change me</p>
+<button onclick="document.getElementById('change').innerHTML='I am changed now'">Try changing it</button>
+<hr><hr><hr>
+<p id="hide">I will hide now</p>
+<button onclick="document.getElementById('hide').style.display='none'">Hide it now</button>
+<hr><hr><hr>
+<p>You will see it now</p>
+<p id="show" style="display: none;">I can be seen now</p>
+<button onclick="document.getElementById('show').style.display='block'">Show it now</button>
+<hr><hr><hr>
+<p id="big-text">Watch me getting big</p>
+<button onclick="document.getElementById('big-text').style.fontSize='45px'">Bigg</button>
+<hr><hr><hr>
+<script>
+    document.write('hi im in a script')
+    window.alert('im in an alert box')
+
+</script>
+</body>
+</html>

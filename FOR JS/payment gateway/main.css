@@ -1,0 +1,65 @@
+.no{
+    background-image: linear-gradient(to bottom, #1d667a, #185b6d, #134f61, #0e4554, #093a48);
+    height: 100vh;
+}
+
+
+.form1{
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #17191c, #141417, #100f11, #090709, #000000);
+    display: block;
+}
+
+.form1 label{
+    font-size: 20px;
+    font-family: cursive;
+    width: 300px;
+    
+}
+
+.form1 label span{
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.form1 label input{
+    
+    border-bottom: 2px solid #f1f1f1;
+    background: transparent;
+    outline: 0;
+    
+}
+
+
+
+.form2{
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #7a1d4a, #811356, #860666, #870077, #84008b);
+    display: none;
+}
+
+.form2 label{
+    font-size: 20px;
+    font-family: cursive;
+    width: 300px;
+    
+}
+
+.form2 label span{
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.form2 label input{
+    
+    border-bottom: 3px solid #f1f1f1;
+    background: transparent;
+    outline: 0;
+    
+}
+
+.form3{
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #2d7a1d, #347e19, #3b8313, #42870b, #498b00);
+    display: none;
+}

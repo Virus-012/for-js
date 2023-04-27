@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter Somthing here!!! <input type="text" name="" id="no_empty1"><br>
+    Enter Somthing here!!! <input type="text" name="" id="no_empty2"><br>
+    Enter Somthing here!!! <input type="text" name="" id="no_empty3"><br>
+    Enter Somthing here!!! <input type="text" name="" id="no_empty4"><br>
+    Enter Somthing here!!! <input type="text" name="" id="no_empty5"><br>
+<br>
+    <button onclick="check()">Check Empty Field</button>
+
+    <p id="result"></p>
+    <script>   
+    function check()
+    { 
+    a1=document.getElementById('no_empty1').value;
+    b1=a1.trim();
+    a2=document.getElementById('no_empty2').value;
+    b2=a2.trim();
+    a3=document.getElementById('no_empty3').value;
+    b3=a3.trim();
+    a4=document.getElementById('no_empty4').value;
+    b4=a4.trim();
+    a5=document.getElementById('no_empty5').value;
+    b5=a5.trim();
+    a='';
+        if (b1.length==0 || b2.length==0 || b3.length==0 || b4.length==0 ||b5.length==0)
+            {
+                if(b1.length==0)
+                {
+                a+="1 is empty\n";
+                if (b2.length==0)
+                {
+                    a+="2 is empty\n";
+                    if (b3.length==0)
+                    {
+                        a+="3 is empty\n";
+                        if (b4.length==0)
+                        {
+                        a+="4 is empty\n";
+                        
+                            if(b5.length==0)
+                            {
+                                a+="5 is empty\n";                        
+                            }
+
+                            else
+                            {
+                                a+="5 is filled" ;                               
+                            }
+                        }
+                        else
+                        {
+                        a+="4 is filled";
+
+                        }
+                    }
+                    else
+                    {
+                    a+="3 is filled";
+
+                    }
+
+                }
+                else
+                {
+                    a+="2 is filled" ;                   
+                }
+
+            }
+            else
+        {
+            a+="1 is filled";
+        }
+        }
+        
+            else
+            {
+                a+="not empty";
+            }
+            document.getElementById("result").innerHTML=a;
+    }
+    </script>
+</body>
+</html>

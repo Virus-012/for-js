@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="email" id="email" placeholder="email">
+    <br>
+    <input type="text" name="mobile" id="mobile" placeholder="mobile">
+    <br>
+    <button onclick="fun()" type="button">email check</button>
+    <button type="button" onclick="myFunction()">number check</button>
+    <p id="result1"></p>
+    <p id="demo"></p>
+    <script>
+        function fun(){
+        a=document.getElementById('email').value;
+        let first_check=a.indexOf('@');
+        let X='';
+        if (first_check <= 0)
+        {
+            X+='not vaild email';
+        }
+        else
+        {
+            X+='vaild email';
+        }
+        document.getElementById('result1').innerHTML=X;
+        }
+
+        function myFunction() 
+        {
+            let x = document.getElementById("mobile").value;
+            let y=x.length;
+            let text=' ';
+            if (y >= 10) {
+                text += "Input not valid";
+            } 
+            else if(y<9)
+            {
+                text += "Input not valid";
+            }
+            else if(y==9)
+            {
+                text+="Input valid"
+            }
+            
+            document.getElementById("demo").innerHTML = text;
+        }
+
+    </script>
+</body>
+</html>
